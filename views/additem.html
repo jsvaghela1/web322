@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Latest compiled and minified Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+
+    <title>About</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">WEB322 - Assignment - Jaimil Vaghela</a>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop">Shop</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/items">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/items/add">Add Item</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container" style="padding-top: 90px;">
+        <div class="row">
+            <aside class="col-md-3">
+                <h2>About Myself!</h2>
+                <p>My name is Jaimil, and I am currently pursuing a two-year diploma program at Seneca College, with a focus on 
+                  web development. I am passionate about learning the latest web technologies and applying my skills to build 
+                  functional and user-friendly websites. With a strong interest in honing my technical abilities and a dedication to 
+                  continuous improvement, I am eager to contribute my knowledge to real-world projects and collaborate with others in the field.</p>
+            </aside>
+            <section class="main col-md-9">
+                <article>
+                  <h2>WELCOME</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan libero a sem venenatis pharetra. Nulla facilisi. In semper blandit arcu. Nullam vitae sem convallis, vehicula nisi eu, hendrerit justo.
+                    Pellentesque libero neque, interdum nec diam bibendum, tristique pellentesque felis. Sed vel adipiscing lacus. Maecenas porta dolor a turpis aliquet, eget posuere nisi fringilla. Aenean ac turpis tristique,
+                    feugiat mi sodales, laoreet neque. Donec tristique nec quam sit amet sagittis. Mauris elementum ullamcorper risus at luctus.
+                  </p>
+                  <p>
+                    For this project, I developed an eCommerce web application that serves as the foundation for future assignments. The project involved setting up a structured development environment by creating a main application folder, initializing a Git repository, and organizing files and folders (such as views, public, and data) to house HTML, CSS, and JSON files. I implemented key features, 
+                    including multiple routes that serve static content (HTML and CSS) and dynamically provide data using JSON.
+                  <p>
+                    I developed a "store-service" module to handle data retrieval for items and categories, ensuring functionality for accessing all items, published items, and category data. Additionally, I created server-side routes using Express.js to serve the "about" page, redirect the root route to "/about," and set up JSON-based routes for "/shop," "/items," and "/categories." To enhance user experience, I customized the static content 
+                    by updating HTML links, headings, and personalized the styling through the main.css file.
+                  </p>
+                  <p>
+                    Furthermore, I incorporated Bootstrap and customized CSS to enhance the design and user interface, making the app more visually appealing. I paid attention to the overall structure and organization of the app, following best practices for clean, maintainable code. After completing all functionalities, I tested the app locally, ensuring it runs 
+                    without any errors before pushing it to GitHub and deploying it successfully on Vercel.
+                  </p>
+                  <p>
+                    I also ensured proper error handling by implementing a custom 404 page for unmatched routes. Finally, the project was pushed to GitHub, deployed on Vercel, 
+                    and all relevant submission materials were prepared and shared accordingly.
+                  </p>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <!-- Latest compiled and minified Bootstrap 5 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0-alpha3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<form method="post" action="/items/add" enctype="multipart/form-data">
+    <fieldset>  
+      <legend>Feature Image</legend>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="featureImage"
+              name="featureImage"
+              type="file"
+            />
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Post Content</legend>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="title">Item Name:</label>
+            <input class="form-control" id="title" name="title" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="price">Price:</label>
+            <input class="form-control" id="price" name="price" type="text" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="body">Description:</label>
+            <textarea
+              class="form-control"
+              id="body"
+              name="body"
+              rows="15"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select class="form-control" name="category" id="category">
+              <option value="1">Home, Garden</option>
+              <option value="2">Electronics, Computers, Video Games</option>
+              <option value="3">Clothing</option>
+              <option value="4">Sports & Outdoors</option>
+              <option value="5">Pets</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="category">Visibility:</label>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="published" id="published" />
+                Published
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <hr />
+    <input
+      type="submit"
+      class="btn btn-primary pull-right"
+      value="Add Post"
+    /><br /><br /><br />
+  </form>
